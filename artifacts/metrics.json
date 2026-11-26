@@ -1,0 +1,150 @@
+{
+  "rows": 768,
+  "test_rows": 154,
+  "cv_folds": 5,
+  "cross_validation_threshold": 0.5,
+  "selected_neural_network": {
+    "imputation": "knn",
+    "batch_size": 64,
+    "epochs_after_early_stopping": 31
+  },
+  "cross_validation": [
+    {
+      "model": "logistic_regression",
+      "imputation": "median",
+      "batch_size": null,
+      "accuracy_mean": 0.7654404904704785,
+      "accuracy_std": 0.024379972623308797,
+      "precision_mean": 0.6363283254380866,
+      "precision_std": 0.044100722420348536,
+      "recall_mean": 0.7755260243632336,
+      "recall_std": 0.032864440864469914,
+      "f1_mean": 0.6978282828282828,
+      "f1_std": 0.022766240442984115,
+      "roc_auc_mean": 0.8496054817275749,
+      "roc_auc_std": 0.022068547457507262
+    },
+    {
+      "model": "dropout_neural_network",
+      "imputation": "median",
+      "batch_size": 16,
+      "accuracy_mean": 0.7393975743036119,
+      "accuracy_std": 0.011920703989508966,
+      "precision_mean": 0.597857142857143,
+      "precision_std": 0.013720365879662844,
+      "recall_mean": 0.7709856035437431,
+      "recall_std": 0.050605567024726954,
+      "f1_mean": 0.6729056897312475,
+      "f1_std": 0.02292842821021519,
+      "roc_auc_mean": 0.8365545404208194,
+      "roc_auc_std": 0.009838156342603448
+    },
+    {
+      "model": "dropout_neural_network",
+      "imputation": "median",
+      "batch_size": 32,
+      "accuracy_mean": 0.741010262561642,
+      "accuracy_std": 0.021544087789287767,
+      "precision_mean": 0.6013206178865454,
+      "precision_std": 0.03424122654875582,
+      "recall_mean": 0.7756367663344408,
+      "recall_std": 0.053835862739198895,
+      "f1_mean": 0.6759426001217655,
+      "f1_std": 0.02315014978358435,
+      "roc_auc_mean": 0.8392331118493909,
+      "roc_auc_std": 0.013006685327496966
+    },
+    {
+      "model": "dropout_neural_network",
+      "imputation": "median",
+      "batch_size": 64,
+      "accuracy_mean": 0.7507930161268827,
+      "accuracy_std": 0.009948530042610197,
+      "precision_mean": 0.6117746390458255,
+      "precision_std": 0.012384813373755844,
+      "recall_mean": 0.7802879291251384,
+      "recall_std": 0.0458249688086216,
+      "f1_mean": 0.6853397528958475,
+      "f1_std": 0.020099006042860867,
+      "roc_auc_mean": 0.8376218161683276,
+      "roc_auc_std": 0.013511738055124995
+    },
+    {
+      "model": "logistic_regression",
+      "imputation": "knn",
+      "batch_size": null,
+      "accuracy_mean": 0.7670798347327736,
+      "accuracy_std": 0.019039367099678267,
+      "precision_mean": 0.6380479026734013,
+      "precision_std": 0.03508547616659053,
+      "recall_mean": 0.7755260243632336,
+      "recall_std": 0.032864440864469914,
+      "f1_mean": 0.6990895470345688,
+      "f1_std": 0.017027766759274733,
+      "roc_auc_mean": 0.8516818936877076,
+      "roc_auc_std": 0.018611578970885143
+    },
+    {
+      "model": "dropout_neural_network",
+      "imputation": "knn",
+      "batch_size": 16,
+      "accuracy_mean": 0.7393842463014794,
+      "accuracy_std": 0.01957007334497233,
+      "precision_mean": 0.5983042785476863,
+      "precision_std": 0.025325091211392696,
+      "recall_mean": 0.770764119601329,
+      "recall_std": 0.04668926685234285,
+      "f1_mean": 0.6731041919877734,
+      "f1_std": 0.026271718736948144,
+      "roc_auc_mean": 0.8366251384274641,
+      "roc_auc_std": 0.010637312536021964
+    },
+    {
+      "model": "dropout_neural_network",
+      "imputation": "knn",
+      "batch_size": 32,
+      "accuracy_mean": 0.747527655604425,
+      "accuracy_std": 0.023401539030113296,
+      "precision_mean": 0.6072946708463951,
+      "precision_std": 0.030334462043437427,
+      "recall_mean": 0.7849390919158361,
+      "recall_std": 0.03896008943526853,
+      "f1_mean": 0.6842746396355632,
+      "f1_std": 0.02693112528005815,
+      "roc_auc_mean": 0.8375110741971208,
+      "roc_auc_std": 0.012157885654488713
+    },
+    {
+      "model": "dropout_neural_network",
+      "imputation": "knn",
+      "batch_size": 64,
+      "accuracy_mean": 0.7523923763827802,
+      "accuracy_std": 0.02122741154870816,
+      "precision_mean": 0.6145649907472567,
+      "precision_std": 0.029495822726651175,
+      "recall_mean": 0.7801771871539314,
+      "recall_std": 0.043651866718720386,
+      "f1_mean": 0.6869793778401797,
+      "f1_std": 0.02749903034306314,
+      "roc_auc_mean": 0.8392109634551496,
+      "roc_auc_std": 0.016393227057097344
+    }
+  ],
+  "held_out_test_metrics": {
+    "logistic_regression": {
+      "accuracy": 0.7402597402597403,
+      "precision": 0.5972222222222222,
+      "recall": 0.7962962962962963,
+      "f1": 0.6825396825396826,
+      "roc_auc": 0.8346296296296296
+    },
+    "dropout_neural_network": {
+      "accuracy": 0.7532467532467533,
+      "precision": 0.6081081081081081,
+      "recall": 0.8333333333333334,
+      "f1": 0.703125,
+      "roc_auc": 0.8329629629629629
+    }
+  },
+  "note": "Metrics are experimental results on a small public dataset, not evidence of clinical performance. Glucose bins are exploratory; fasting status is not established by this dataset."
+}

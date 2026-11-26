@@ -1,0 +1,26 @@
+{
+  "rows": 768,
+  "validation": "stratified 5-fold cross-validation",
+  "decision_threshold": 0.5,
+  "model": "unweighted logistic regression (C=10)",
+  "preprocessing": "Invalid zeros become missing; median imputation and scaling are fitted separately within each training fold.",
+  "metrics": {
+    "accuracy": {
+      "mean": 0.7760037348272643,
+      "std": 0.015664961336592512
+    },
+    "precision": {
+      "mean": 0.7313395409621826,
+      "std": 0.06427331566680666
+    },
+    "recall": {
+      "mean": 0.5785464709993012,
+      "std": 0.050323199800921634
+    },
+    "roc_auc": {
+      "mean": 0.8362948986722571,
+      "std": 0.02231898635672906
+    }
+  },
+  "note": "This small public dataset is for experimentation, not clinical use. Higher precision here comes with lower recall than class-weighted training."
+}
