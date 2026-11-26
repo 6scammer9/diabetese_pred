@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:8501:8501"
+    environment:
+      APP_DB_PATH: /app/data/diabetes.sqlite3
+    volumes:
+      - diabetes_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  diabetes_data:

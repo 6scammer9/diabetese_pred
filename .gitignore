@@ -3,3 +3,7 @@ __pycache__/
 .venv/
 GitHub-Copilot-windows-x64-setup.exe
 test_data.xlsx
+.env
+data/
+*.db
+*.sqlite3
